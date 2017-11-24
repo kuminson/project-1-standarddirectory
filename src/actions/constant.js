@@ -1,0 +1,1 @@
+export const CHANGE_MAIN_HEIGHT = 'CHANGE_MAIN_HEIGHT';

@@ -1,4 +1,20 @@
-.header{
+.header {
     width: 100%;
-    background-color: ;
+    background-color: #d9edf7;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+.h_title {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #337ab7;
+    font-weight: bold;
+    font-size: 3em;
+}
+.ht_en {
+    font-size: 0.7em;
+    font-weight: normal;
 }

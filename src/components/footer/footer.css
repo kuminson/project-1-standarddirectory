@@ -1,0 +1,15 @@
+.footer{
+    width: 100%;
+    background-color: #5bc0de;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #EEE;
+    font-size: 16px;
+    /*position: absolute;*/
+    /*bottom: 0;*/
+}
+.f_link{
+    color: #518EC2;
+    text-decoration: underline;
+}
