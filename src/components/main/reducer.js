@@ -5,13 +5,14 @@ function main(state = { mainHeight: 0}, action){
   switch (action.type){
     case CHANGE_MAIN_HEIGHT:
       //缓存window高度
-      const windowHeight = document.window.innerHeight;
+      const windowHeight = window.innerHeight;
       //初始化新main高度
       let mh = 0;
       //如果其他组件为空
       if(state.otherHeight === undefined || Object.getOwnPropertyNames(state.otherHeight).length === 0){
         //返回window高度
-        return windowHeight;
+        console.log('windowHeight',windowHeight);
+        return Object.assign({}, state, {mainHeight: windowHeight});
       }
       //缓存其他组件高度
       const otherHeight = state.otherHeight;
@@ -20,7 +21,9 @@ function main(state = { mainHeight: 0}, action){
         mh = windowHeight - otherHeight[h];
       }
       //返回main高度
-      return state.mainHeight = mh;
+      console.log('mh',mh);
+      // return {...state, ...{mainHeight: mh}};
+      return Object.assign({}, state, {mainHeight: mh});
     default:
       return state;
   }

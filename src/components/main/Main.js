@@ -5,15 +5,24 @@ import { CHANGE_MAIN_HEIGHT } from '../../actions/constant';
 
 class Main extends Component{
   componentDidMount(){
-    window.document.addEventListener('onChange', () => {
+    //构建完成后 计算main高度
+    this.props.changeMainHeight();
+    //window绑定resize事件
+    window.addEventListener('resize',
     //  发出计算main高度动作
-      this.props.changeMainHeight();
-    });
+      this.props.changeMainHeight()
+    );
+  }
+  componentWillUnmount(){
+    //卸载模块时 移除resize事件
+    window.removeEventListener('resize',
+      this.props.changeMainHeight()
+    );
   }
   render(){
     return (
-      <div className="main" style={{ minHeight: this.props.mainHeight }}>
-        <div className="m_content">
+      <div className="main">
+        <div className="m_content" style={{minHeight: this.props.mainHeight}}>
           this is main
         </div>
       </div>
@@ -29,6 +38,9 @@ function mapStateToProps(state){
   }
 }
 
+//action creator
+const changeMainHeightAction = { type: CHANGE_MAIN_HEIGHT};
+
 //dispatch 与 props映射
 function mapDispatchToProps(dispatch){
   return {
@@ -36,9 +48,6 @@ function mapDispatchToProps(dispatch){
     changeMainHeight: () => dispatch(changeMainHeightAction)
   }
 }
-
-//action creator
-const changeMainHeightAction = { type: CHANGE_MAIN_HEIGHT};
 
 const MapMain = connect(
   mapStateToProps,
