@@ -1,0 +1,21 @@
+.home{
+    width: 100%;
+    position: relative;
+}
+.home_title{
+    margin-top: 0;
+    margin-bottom: 1em;
+    font-size: 2.5em;
+    color: #337ab7;
+    font-weight: bold;
+    text-align: center;
+}
+.home_add{
+    position: absolute;
+    top: 0em;
+    right: 2em;
+    font-size: 1.25em;
+}
+.home_list{
+    margin-bottom: 2em;
+}

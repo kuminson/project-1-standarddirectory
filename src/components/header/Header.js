@@ -4,16 +4,28 @@ import './header.css';
 import { connect } from 'react-redux';
 
 class Header extends Component{
+  constructor(props){
+    super(props);
+  // 初始化 header id
+    this.state = {headerId: 'header'};
+  //  绑定this
+    this.cHeadHeight = this.cHeadHeight.bind(this);
+  }
+  cHeadHeight(){
+    //获取模块高度
+    const headht = document.getElementById(this.state.headerId).offsetHeight;
+    //提交缓存模块高度action
+    this.props.cacheHeadHeight(headht);
+  }
   componentDidMount(){
     //构建完成后 计算head高度
-    const headht = document.getElementById('header').offsetHeight;
-    this.props.cacheHeadHeight(headht);
+    this.cHeadHeight();
     //window绑定resize事件
-    window.addEventListener('resize', () => {
-      //  发出计算main高度动作
-      const headht = document.getElementById('header').offsetHeight;
-      this.props.cacheHeadHeight(headht);
-    });
+    window.addEventListener('resize', this.cHeadHeight);
+  }
+  componentWillUnmount(){
+  //  注销window绑定的resize事件
+    window.removeEventListener('resize', this.cHeadHeight);
   }
   render(){
     return (
@@ -25,14 +37,9 @@ class Header extends Component{
 }
 
 
-//state 与 props映射
-function mapStateToProps(state){
-  return {
-  }
-}
-
 //action creator
-const cacheHeadHeightAction = (headht) => ({ type: CACHE_HEAD_HEIGHT,
+const cacheHeadHeightAction = (headht) => ({
+  type: CACHE_HEAD_HEIGHT,
   payload : headht
 });
 
@@ -45,7 +52,7 @@ function mapDispatchToProps(dispatch){
 }
 
 const MapHeader = connect(
-  mapStateToProps,
+  null,
   mapDispatchToProps
 )(Header);
 

@@ -1,0 +1,62 @@
+.create{
+    width:100%;
+}
+.create_title{
+    margin-top: 0;
+    margin-bottom: 1em;
+    font-size: 2.5em;
+    color: #337ab7;
+    font-weight: bold;
+    text-align: center;
+}
+.create_headline{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+}
+.create_content{
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+.create_content_item{
+    list-style:none;
+}
+.create_list{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+}
+.create_new{
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5em;
+    margin-top: 2em;
+}
+.create_new_icon{
+    vertical-align: middle;
+    margin-top: -0.3em;
+    margin-right: 0.3em;
+}
+.create_btn{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    margin-top: 2em;
+}
+.create_btn_back{
+    width: 30%;
+    float: left;
+    font-size: 1.5em;
+}
+.create_btn_save{
+    width: 30%;
+    float: right;
+    font-size: 1.5em;
+}

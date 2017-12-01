@@ -1,15 +1,16 @@
 .footer{
     width: 100%;
-    background-color: #5bc0de;
+    background-color: #d9edf7;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
-    color: #EEE;
+    color: #337ab7;
     font-size: 16px;
     /*position: absolute;*/
     /*bottom: 0;*/
 }
 .f_link{
-    color: #518EC2;
+    color: #337ab7;
+    font-weight: bold;
     text-decoration: underline;
 }

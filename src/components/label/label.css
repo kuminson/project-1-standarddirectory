@@ -1,0 +1,24 @@
+.mlabel{
+    padding: 1em;
+    background-color: #5bc0de;
+    -webkit-box-shadow: 0em 0em 1em 0em #888;
+    -moz-box-shadow: 0em 0em 1em 0em #888;
+    box-shadow: 0em 0em 1em 0em #888;
+}
+.mlabel_title{
+    margin-top: 0;
+    margin-bottom: 0.8em;
+    text-align: center;
+    color: #337ab7;
+}
+.mlabel_content{
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #337ab7;
+    padding-left: 1em;
+}
+.mlabel_content_list{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+}
