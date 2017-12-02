@@ -29,6 +29,7 @@ class Main extends Component{
   }
   render(){
     //计算main高度
+    console.log(this.props.directory);
     const mainHeight = this.props.windowHeight - this.props.headHeight - this.props.footHeight
     return (
       <div className="main">
@@ -50,7 +51,8 @@ function mapStateToProps(state){
     //主体div高度
     windowHeight: state.main.windowHeight,
     headHeight: state.header.headHeight,
-    footHeight: state.footer.footHeight
+    footHeight: state.footer.footHeight,
+    directory: state.create.directory
   }
 }
 

@@ -2,9 +2,11 @@ import React, { Component } from 'react';
 import './home.css';
 import { Route, Link } from 'react-router-dom';
 import Label from "../label/Label";
+import { connect } from 'react-redux';
 
 class Home extends Component{
   render(){
+    let listData = Object.values(this.props.directory);
     return(
       <div className="home">
         <h3 className="home_title">标准目录列表</h3>
@@ -13,30 +15,45 @@ class Home extends Component{
           &nbsp;新建
         </Link>
         <div className="container-fluid">
-          <div className="row">
-            <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4 home_list">
+          <ul className="row home_content">
+            <li className="col-xs-12 col-sm-6 col-md-6 col-lg-4 home_list">
               <Route exact path="/" component={Label}/>
-            </div>
-            <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4 home_list">
-              <Route exact path="/" component={Label}/>
-            </div>
-            <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4 home_list">
-              <Route exact path="/" component={Label}/>
-            </div>
-            <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4 home_list">
-              <Route exact path="/" component={Label}/>
-            </div>
-            <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4 home_list">
-              <Route exact path="/" component={Label}/>
-            </div>
-            <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4 home_list">
-              <Route exact path="/" component={Label}/>
-            </div>
-          </div>
+            </li>
+            {
+              listData.map((list, key) => (
+                <li className="col-xs-12 col-sm-6 col-md-6 col-lg-4 home_list" key={key}>
+                  <Route exact path="/" component={Label} listid={list.id}/>
+                </li>
+              ))
+            }
+          </ul>
         </div>
       </div>
     )
   }
 }
 
-export default Home;
+//state 与 props映射
+function mapStateToProps(state){
+  return {
+    directory: state.create.directory
+  }
+}
+
+
+
+//dispatch 与 props映射
+function mapDispatchToProps(dispatch){
+  return {
+  }
+}
+
+//重构新的模块
+const MapHome = connect(
+  mapStateToProps,
+  mapDispatchToProps,
+  null,
+  {pure:false}
+)(Home);
+
+export default MapHome;

@@ -30,6 +30,16 @@
     margin-right: auto;
     margin-bottom: 1em;
 }
+.create_hint{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    color: red;
+    text-align: center;
+}
+.create_hint_hide{
+    display: none;
+}
 .create_new{
     display: block;
     width: 80%;

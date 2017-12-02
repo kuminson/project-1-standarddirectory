@@ -16,6 +16,11 @@
     right: 2em;
     font-size: 1.25em;
 }
+.home_content{
+    margin-bottom: 0;
+    padding-left: 0;
+}
 .home_list{
     margin-bottom: 2em;
+    list-style: none;
 }
