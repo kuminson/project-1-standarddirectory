@@ -4,7 +4,7 @@ class Directory extends Component{
   render(){
     return(
       <div>
-        this is directory
+        this is directory {this.props.match.params.dirId}
       </div>
     )
   }

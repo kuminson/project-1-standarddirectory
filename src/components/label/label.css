@@ -4,6 +4,10 @@
     -webkit-box-shadow: 0em 0em 1em 0em #888;
     -moz-box-shadow: 0em 0em 1em 0em #888;
     box-shadow: 0em 0em 1em 0em #888;
+    cursor: pointer;
+}
+.mlabel:active{
+    background-color: #269abc;
 }
 .mlabel_title{
     margin-top: 0;

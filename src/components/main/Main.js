@@ -29,7 +29,6 @@ class Main extends Component{
   }
   render(){
     //计算main高度
-    console.log(this.props.directory);
     const mainHeight = this.props.windowHeight - this.props.headHeight - this.props.footHeight
     return (
       <div className="main">

@@ -1,10 +1,17 @@
 import React, { Component } from 'react';
 import './home.css';
-import { Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Label from "../label/Label";
 import { connect } from 'react-redux';
 
 class Home extends Component{
+  constructor(props){
+    super(props);
+    this.handleGoDir = this.handleGoDir.bind(this);
+  }
+  handleGoDir(id, e){
+    this.props.history.push('/directory/'+ id);
+  }
   render(){
     let listData = Object.values(this.props.directory);
     return(
@@ -16,13 +23,11 @@ class Home extends Component{
         </Link>
         <div className="container-fluid">
           <ul className="row home_content">
-            <li className="col-xs-12 col-sm-6 col-md-6 col-lg-4 home_list">
-              <Route exact path="/" component={Label}/>
-            </li>
             {
               listData.map((list, key) => (
-                <li className="col-xs-12 col-sm-6 col-md-6 col-lg-4 home_list" key={key}>
-                  <Route exact path="/" component={Label} listid={list.id}/>
+                <li className="col-xs-12 col-sm-6 col-md-6 col-lg-4 home_list" key={key} onClick={(e) => this.handleGoDir(list.id, e)}>
+                  {/*<Route exact path="/" component={Label} listid={list.id}/>*/}
+                  <Label listid={list.id} history={this.props.history}/>
                 </li>
               ))
             }

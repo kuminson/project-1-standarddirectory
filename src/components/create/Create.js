@@ -8,7 +8,7 @@ class Create extends Component{
     super(props);
     this.state = {
       title: '',
-      list: [''],
+      list: ['', '', ''],
       hint: 'create_hint_hide',
       hintContent: ''
     };
@@ -88,6 +88,7 @@ class Create extends Component{
         // data.data.list = state.list;
         data.title = state.title;
         data.list = list;
+        data.oldDir = this.props.directory;
         //  提交数据
         this.props.changeDirectoryData(data);
       //  返回home页
@@ -132,6 +133,7 @@ class Create extends Component{
 //state 与 props映射
 function mapStateToProps(state){
   return {
+    directory: state.create.directory
   }
 }
 
