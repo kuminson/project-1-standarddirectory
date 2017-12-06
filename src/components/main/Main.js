@@ -34,9 +34,9 @@ class Main extends Component{
       <div className="main">
         <div className="m_content" style={{minHeight: mainHeight + 'px'}}>
           <Switch>
-            <Route exact path="/" component={Home}/>
-            <Route exact path="/create" component={Create}/>
-            <Route path="/directory/:dirId" component={Directory}/>
+            <Route exact path="/project-1-standarddirectory/" component={Home}/>
+            <Route exact path="/project-1-standarddirectory/create" component={Create}/>
+            <Route path="/project-1-standarddirectory/directory/:dirId" component={Directory}/>
           </Switch>
         </div>
       </div>
