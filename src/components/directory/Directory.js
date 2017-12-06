@@ -22,7 +22,7 @@ class Directory extends Component{
             <CheckedItem list={list} key={key} />
           ))}
         </ul>
-        <Link to="/" className="btn btn-primary directory_finish">完成</Link>
+        <Link to="/project-1-standarddirectory/" className="btn btn-primary directory_finish">完成</Link>
       </div>
     )
   }

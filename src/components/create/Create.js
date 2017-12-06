@@ -63,7 +63,7 @@ class Create extends Component{
   //  询问确定返回
     if(window.confirm('确定要放弃编辑？')){
       //  返回home页
-      this.props.history.push('/');
+      this.props.history.push('/project-1-standarddirectory/');
     }
   }
   // 保存表单方法
@@ -92,7 +92,7 @@ class Create extends Component{
         //  提交数据
         this.props.changeDirectoryData(data);
       //  返回home页
-        this.props.history.push('/');
+        this.props.history.push('/project-1-standarddirectory/');
       }
     })
   }

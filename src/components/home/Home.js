@@ -10,7 +10,7 @@ class Home extends Component{
     this.handleGoDir = this.handleGoDir.bind(this);
   }
   handleGoDir(id, e){
-    this.props.history.push('/directory/'+ id);
+    this.props.history.push('/project-1-standarddirectory/directory/'+ id);
   }
   render(){
     let listData = Object.values(this.props.directory);
@@ -28,7 +28,7 @@ class Home extends Component{
               ))
             }
             <li className="col-xs-12 col-sm-12 col-md-12 col-lg-12 home_list" key='create' >
-              <Link to="/create" className="btn btn-primary home_add">
+              <Link to="/project-1-standarddirectory/create" className="btn btn-primary home_add">
                 <span className="glyphicon glyphicon-plus-sign hb_icon"> </span>
                 &nbsp;新建
               </Link>
