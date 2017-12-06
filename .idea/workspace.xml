@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e07759ef-3cb6-4b0a-a659-90925f745c68" name="默认" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/config/rootPath.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/create/Create.js" afterPath="$PROJECT_DIR$/src/components/create/Create.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/directory/Directory.js" afterPath="$PROJECT_DIR$/src/components/directory/Directory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/home/Home.js" afterPath="$PROJECT_DIR$/src/components/home/Home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/main/Main.js" afterPath="$PROJECT_DIR$/src/components/main/Main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/config/rootPath.js" afterPath="$PROJECT_DIR$/src/config/rootPath.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -64,7 +59,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CheckedItem.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CheckedItem.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/checkedItem/CheckedItem.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="351">
@@ -100,17 +95,17 @@
         <entry file="file://$PROJECT_DIR$/src/actions/constant.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="81">
-              <caret line="3" column="61" lean-forward="true" selection-start-line="3" selection-start-column="61" selection-end-line="3" selection-end-column="61" />
+              <caret line="3" column="61" lean-forward="false" selection-start-line="3" selection-start-column="61" selection-end-line="3" selection-end-column="61" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rootPath.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="rootPath.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/config/rootPath.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+              <caret line="0" column="26" lean-forward="false" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -175,11 +170,11 @@
         <option value="$PROJECT_DIR$/src/store/store.js" />
         <option value="$PROJECT_DIR$/src/components/home/home.css" />
         <option value="$PROJECT_DIR$/src/components/checkedItem/CheckedItem.js" />
-        <option value="$PROJECT_DIR$/src/config/rootPath.js" />
         <option value="$PROJECT_DIR$/src/components/main/Main.js" />
         <option value="$PROJECT_DIR$/src/components/home/Home.js" />
         <option value="$PROJECT_DIR$/src/components/directory/Directory.js" />
         <option value="$PROJECT_DIR$/src/components/create/Create.js" />
+        <option value="$PROJECT_DIR$/src/config/rootPath.js" />
       </list>
     </option>
   </component>
@@ -241,47 +236,6 @@
               <item name="project-1-standarddirectory" type="b2602c69:ProjectViewProjectNode" />
               <item name="project-1-standarddirectory" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-1-standarddirectory" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-1-standarddirectory" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-1-standarddirectory" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-1-standarddirectory" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="checkedItem" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-1-standarddirectory" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-1-standarddirectory" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="create" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-1-standarddirectory" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-1-standarddirectory" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="directory" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-1-standarddirectory" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-1-standarddirectory" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-1-standarddirectory" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-1-standarddirectory" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="project-1-standarddirectory" type="b2602c69:ProjectViewProjectNode" />
@@ -375,7 +329,7 @@
       <workItem from="1512526975122" duration="4211000" />
       <workItem from="1512574369020" duration="147000" />
       <workItem from="1512575312693" duration="714000" />
-      <workItem from="1512576688209" duration="558000" />
+      <workItem from="1512576688209" duration="695000" />
     </task>
     <task id="LOCAL-00001" summary="add new code">
       <created>1511449712580</created>
@@ -444,7 +398,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112426000" />
+    <option name="totallyTimeSpent" value="112563000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="207" y="82" width="1400" height="884" extended-state="0" />
@@ -812,15 +766,7 @@
     <entry file="file://$PROJECT_DIR$/src/actions/constant.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
-          <caret line="3" column="61" lean-forward="true" selection-start-line="3" selection-start-column="61" selection-end-line="3" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/config/rootPath.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+          <caret line="3" column="61" lean-forward="false" selection-start-line="3" selection-start-column="61" selection-end-line="3" selection-end-column="61" />
           <folding />
         </state>
       </provider>
@@ -875,6 +821,14 @@
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/rootPath.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="26" lean-forward="false" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
