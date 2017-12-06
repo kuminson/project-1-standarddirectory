@@ -3,6 +3,7 @@ import './home.css';
 import { Link } from 'react-router-dom';
 import Label from "../label/Label";
 import { connect } from 'react-redux';
+import { ROOT_PATH } from '../../config/rootPath';
 
 class Home extends Component{
   constructor(props){
@@ -10,7 +11,7 @@ class Home extends Component{
     this.handleGoDir = this.handleGoDir.bind(this);
   }
   handleGoDir(id, e){
-    this.props.history.push('/project-1-standarddirectory/directory/'+ id);
+    this.props.history.push(ROOT_PATH + 'directory/'+ id);
   }
   render(){
     let listData = Object.values(this.props.directory);
@@ -28,7 +29,7 @@ class Home extends Component{
               ))
             }
             <li className="col-xs-12 col-sm-12 col-md-12 col-lg-12 home_list" key='create' >
-              <Link to="/project-1-standarddirectory/create" className="btn btn-primary home_add">
+              <Link to={ROOT_PATH + "/create"} className="btn btn-primary home_add">
                 <span className="glyphicon glyphicon-plus-sign hb_icon"> </span>
                 &nbsp;新建
               </Link>

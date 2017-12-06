@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import './directory.css';
 import CheckedItem from "../checkedItem/CheckedItem";
+import { ROOT_PATH } from '../../config/rootPath';
 
 class Directory extends Component{
   render(){
@@ -22,7 +23,7 @@ class Directory extends Component{
             <CheckedItem list={list} key={key} />
           ))}
         </ul>
-        <Link to="/project-1-standarddirectory/" className="btn btn-primary directory_finish">完成</Link>
+        <Link to={ROOT_PATH + "/"} className="btn btn-primary directory_finish">完成</Link>
       </div>
     )
   }

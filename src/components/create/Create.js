@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { CHANGE_DIRECTORY_DATA } from '../../actions/constant';
 import { connect } from 'react-redux';
 import './create.css'
+import { ROOT_PATH } from '../../config/rootPath';
 
 class Create extends Component{
   constructor(props){
@@ -63,7 +64,7 @@ class Create extends Component{
   //  询问确定返回
     if(window.confirm('确定要放弃编辑？')){
       //  返回home页
-      this.props.history.push('/project-1-standarddirectory/');
+      this.props.history.push(ROOT_PATH + '/');
     }
   }
   // 保存表单方法
@@ -92,7 +93,7 @@ class Create extends Component{
         //  提交数据
         this.props.changeDirectoryData(data);
       //  返回home页
-        this.props.history.push('/project-1-standarddirectory/');
+        this.props.history.push(ROOT_PATH + '/');
       }
     })
   }
