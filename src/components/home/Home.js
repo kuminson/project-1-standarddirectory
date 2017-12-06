@@ -17,10 +17,6 @@ class Home extends Component{
     return(
       <div className="home">
         <h3 className="home_title">标准目录列表</h3>
-        <Link to="/create" className="btn btn-primary home_add">
-          <span className="glyphicon glyphicon-plus-sign hb_icon"> </span>
-          &nbsp;新建
-        </Link>
         <div className="container-fluid">
           <ul className="row home_content">
             {
@@ -31,6 +27,12 @@ class Home extends Component{
                 </li>
               ))
             }
+            <li className="col-xs-12 col-sm-12 col-md-12 col-lg-12 home_list" key='create' >
+              <Link to="/create" className="btn btn-primary home_add">
+                <span className="glyphicon glyphicon-plus-sign hb_icon"> </span>
+                &nbsp;新建
+              </Link>
+            </li>
           </ul>
         </div>
       </div>

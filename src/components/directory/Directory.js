@@ -13,10 +13,10 @@ class Directory extends Component{
     return(
       <div className="directory">
         <h3 className="directory_title">{ dirData.title }</h3>
-        <Link to="/" className="btn btn-primary directory_back">
-          <span className="glyphicon glyphicon-arrow-left db_icon"> </span>
-          &nbsp;返回
-        </Link>
+        {/*<Link to="/" className="btn btn-primary directory_back">*/}
+          {/*<span className="glyphicon glyphicon-arrow-left db_icon"> </span>*/}
+          {/*&nbsp;返回*/}
+        {/*</Link>*/}
         <ul className="directory_list">
           { dirData.list.map((list, key) => (
             <CheckedItem list={list} key={key} />

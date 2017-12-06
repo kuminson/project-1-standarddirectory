@@ -21,8 +21,8 @@ class CheckedItem extends Component{
   }
   render(){
     return (
-      <li className={this.state.itemClass}>
-        <button className={this.state.btnClass} onClick={this.handleChangeBtn}>
+      <li className={this.state.itemClass} onClick={this.handleChangeBtn}>
+        <button className={this.state.btnClass} >
           <span className={this.state.iconClass}> </span>
         </button>
         <span className="directory_list_item_content">{this.props.list}</span>

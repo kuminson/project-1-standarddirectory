@@ -11,10 +11,9 @@
     text-align: center;
 }
 .home_add{
-    position: absolute;
-    top: 0em;
-    right: 2em;
-    font-size: 1.25em;
+    margin-top: 1em;
+    font-size: 1.5em;
+    width: 100%;
 }
 .home_content{
     margin-bottom: 0;
