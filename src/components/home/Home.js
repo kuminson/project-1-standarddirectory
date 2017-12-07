@@ -11,7 +11,7 @@ class Home extends Component{
     this.handleGoDir = this.handleGoDir.bind(this);
   }
   handleGoDir(id, e){
-    this.props.history.push(ROOT_PATH + 'directory/'+ id);
+    this.props.history.push(ROOT_PATH + '/directory/'+ id);
   }
   render(){
     let listData = Object.values(this.props.directory);
